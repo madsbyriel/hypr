@@ -1,0 +1,44 @@
+{
+    "layer": "top",
+    "position": "top",
+    
+    "cpu": {
+        "format": " {}%",
+    },
+
+    "memory": {
+        "format": " {}%",
+    },
+    
+    "pulseaudio": {
+        "format": " {volume}%"
+    },
+    
+    "network": {
+        "format": "NET {ifname}",
+        "format-ethernet": "󰈁 {ifname}",
+        "format-wifi": "󰖩 {ifname}",
+        "format-disconnected": " {ifname}",
+    },
+
+    "clock": {
+        "format": "󰥔 {:%H:%M}",
+    },
+
+    "battery": {
+        "format": " {capacity}%",
+    },
+
+    "modules-left": [
+        "hyprland/workspaces",
+        "memory",
+        "cpu",
+    ],
+
+    "modules-right": [
+        "battery",
+        "pulseaudio",
+        "network",
+        "clock",
+    ],
+}
