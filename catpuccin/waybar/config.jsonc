@@ -12,7 +12,7 @@
 
     "modules-center": ["custom/music"],
 
-    "modules-right": ["pulseaudio", "backlight", "battery", "clock", "tray"],
+    "modules-right": ["pulseaudio", "network", "backlight", "battery", "clock", "tray"],
 
     "tray": {
         "icon-size": 21,
@@ -54,6 +54,12 @@
         "format-plugged": "󰂄",
         "format-alt": "{icon}",
         "format-icons": ["󰂎", "󰁺",  "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹", ""]
+    },
+    "network": {
+        "format": "NET {ifname}",
+        "format-ethernet": "󰈁 {ifname}",
+        "format-wifi": "󰖩 {ifname}",
+        "format-disconnected": " {ifname}",
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
