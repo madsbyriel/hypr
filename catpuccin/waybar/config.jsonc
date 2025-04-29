@@ -53,7 +53,7 @@
         "format-charging": "󰂄",
         "format-plugged": "󰂄",
         "format-alt": "{icon}",
-        "format-icons": ["󰂎", "󰁺",  "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹", ""]
+        "format-icons": ["󰂎", "󰁺",  "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"]
     },
     "network": {
         "format": "NET {ifname}",
