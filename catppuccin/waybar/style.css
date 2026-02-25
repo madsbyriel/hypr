@@ -1,0 +1,108 @@
+@import "style_gruvbox_dark.css";
+
+* {
+  font-family: 'FiraCode Nerd Font';
+  font-size: 18px;
+  min-height: 0;
+}
+
+#battery.warning:not(.charging) {
+  color: @red;
+}
+
+/*
+right: "pulseaudio", "network", "backlight", "battery", "clock", "tray"
+middle: 
+left: "hyprland/workspaces", "memory", "cpu"
+*/
+/* Colors */
+#waybar {
+  background: transparent;
+}
+
+#workspaces{
+  background: transparent;
+}
+#workspaces button {
+  color: @mauve;
+}
+#workspaces button.active {
+  color: @red;
+}
+#memory{
+  background: transparent;
+  color: @flamingo;
+}
+#cpu{
+  background: transparent;
+  color: @peach;
+}
+
+#custom-music{
+  color: @mauve;
+}
+
+#pulseaudio,
+#network,
+#backlight,
+#battery,
+#battery.charging,
+#clock{
+  background: transparent;
+  color: @green;
+}
+
+#pulseaudio{
+  color: @red;
+}
+#network{
+  color: @peach;
+}
+#clock{
+  color: @rosewater;
+}
+
+#tray{
+  background: transparent;
+}
+
+/* Placement */
+#workspaces{
+  border-radius: 0rem;
+}
+#workspaces button.active {
+  border-radius: 0rem;
+}
+#memory{
+  margin-left: 3rem;
+  margin-right: 1rem;
+}
+#cpu{
+}
+
+#custom-music{}
+
+#pulseaudio,
+#network,
+#backlight,
+#battery,
+#tray{
+  margin-right: 1rem;
+}
+#clock{
+  margin-right: 4rem;
+}
+
+/* Individual styling */
+#workspaces{}
+#memory{}
+#cpu{}
+
+#custom-music{}
+
+#pulseaudio{}
+#network{}
+#backlight{}
+#battery{}
+#clock{}
+#tray{}
