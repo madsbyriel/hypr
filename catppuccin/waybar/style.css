@@ -52,6 +52,11 @@ left: "hyprland/workspaces", "memory", "cpu"
   color: @green;
 }
 
+
+#backlight{
+  color: @yellow;
+}
+
 #pulseaudio{
   color: @red;
 }
@@ -59,7 +64,7 @@ left: "hyprland/workspaces", "memory", "cpu"
   color: @peach;
 }
 #clock{
-  color: @rosewater;
+  color: @sapphire;
 }
 
 #tray{
