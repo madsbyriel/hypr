@@ -17,7 +17,7 @@ left: "hyprland/workspaces", "memory", "cpu"
 */
 /* Colors */
 #waybar {
-  background: transparent;
+  background: @black;
 }
 
 #workspaces{
