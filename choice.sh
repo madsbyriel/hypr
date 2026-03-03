@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 MENU_CMD="${1:-wofi} --dmenu --prompt 'Theme Menu'}"
 
-choice=$(printf "Gruvbox\nCatppuccin" | eval "$MENU_CMD")
+choice=$(printf "Gruvbox\nCatppuccin\nCyberpunk" | eval "$MENU_CMD")
 
 case "$choice" in
     Catppuccin)
@@ -9,5 +9,8 @@ case "$choice" in
         ;;
     Gruvbox)
         ln -fs ~/.config/hypr/gruvbox/theme.conf ~/.config/hypr/theme.conf
+        ;;
+    Cyberpunk)
+        ln -fs ~/.config/hypr/cyberpunk/theme.conf ~/.config/hypr/theme.conf
         ;;
 esac
