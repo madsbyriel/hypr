@@ -1,0 +1,112 @@
+@define-color dark_sand #4e2918;
+@define-color light_sand #e1b39d;
+@define-color medium_sand #c3673c;
+
+
+* {
+  font-family: 'FiraCode Nerd Font', monospace;
+  font-size: 14px;
+}
+
+/* Window */
+window {
+  margin: 0px;
+  padding: 10px;
+  border: 0.16em solid @light_sand;
+  border-radius: 0.5em;
+  background-color: @dark_sand;
+  animation: slideIn 0.5s ease-in-out both;
+}
+
+/* Slide In */
+@keyframes slideIn {
+  0% {
+     opacity: 0;
+  }
+
+  100% {
+     opacity: 1;
+  }
+}
+
+/* Inner Box */
+#inner-box {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background-color: @dark_sand;
+  animation: fadeIn 0.5s ease-in-out both;
+}
+
+/* Fade In */
+@keyframes fadeIn {
+  0% {
+     opacity: 0;
+  }
+
+  100% {
+     opacity: 1;
+  }
+}
+
+/* Outer Box */
+#outer-box {
+  margin: 5px;
+  padding: 10px;
+  border: none;
+  background-color: @dark_sand;
+}
+
+/* Scroll */
+#scroll {
+  margin: 0px;
+  padding: 10px;
+  border: none;
+  background-color: @dark_sand;
+}
+
+/* Input */
+#input {
+  margin: 5px 20px;
+  padding: 10px;
+  border: 0.16em solid @light_sand;
+  border-radius: 0.5em;
+  color: @light_sand;
+  background-color: @dark_sand;
+  animation: fadeIn 0.5s ease-in-out both;
+}
+
+#input image {
+    border: none;
+    color: @light_sand;
+}
+
+/* Text */
+#text {
+  margin: 5px;
+  border: none;
+  color: @medium_sand;
+  animation: fadeIn 0.5s ease-in-out both;
+}
+
+#entry {
+  background-color: @dark_sand;
+}
+
+#entry arrow {
+  border: none;
+  color: @medium_sand;
+}
+
+/* Selected Entry */
+#entry:selected {
+  border: 0.11em solid @dark_sand;
+}
+
+#entry:selected #text {
+  color: @light_sand;
+}
+
+#entry:drop(active) {
+  background-color: @dark_sand;
+}
